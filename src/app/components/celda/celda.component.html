@@ -1,8 +1,8 @@
-<ion-input
+</ion-input
    class="custom"
+   [readonly]="listo"
    [ngClass]= "{'verde': clase === 'acierto', 'naranja': clase === 'casi', 'gris': clase === 'fallo' }"
    [maxlength]="1"
-   (keyup)="onComprobar()"
    [(ngModel)]="opcion"
    
 ></ion-input>

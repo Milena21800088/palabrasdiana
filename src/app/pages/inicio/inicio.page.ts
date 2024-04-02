@@ -25,7 +25,7 @@ export class InicioPage implements OnInit {
     return 0
   }
 onSelectNivel(id: number){
-    this.router.navigate(['/jugar', id])
+    this.router.navigate([' / jugar', id])
   console.log(id)
   }
 }

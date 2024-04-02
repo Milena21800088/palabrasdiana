@@ -6,13 +6,13 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './jugar.page.html',
   styleUrls: ['./jugar.page.scss'],
 })
-export class Jugarpage implements OnInit{
-  
+export class jugarpage implements OnInit{
+enviado: any;
 enviar() {
 throw new Error('Method not implemented.');
 }
-    public id: number= 0
-    public nivel: any = ''
+  public id: number= 0
+  public nivel: any = ''
     public opciones: any  =[
       {id: 1, name: 'Fácil', opc: 7,  color: 'success'},
       {id: 2, name: 'Normal', opc: 5,  color: 'warning'},
@@ -27,7 +27,8 @@ throw new Error('Method not implemented.');
 
     ]
     public palabra: string = ''
-    public letras: string[] = []
+    public letras: string [] = []
+    public letra: string [] = []
 jugador: any;
 
    

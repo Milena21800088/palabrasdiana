@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { JugarPageRoutingModule } from './jugar-routing.module';
 
-import { Jugarpage } from './jugar.page';
+import { jugarpage } from './jugar.page';
 import { FilaComponent } from 'src/app/components/fila/fila.component';
 import { CeldaComponent } from 'src/app/components/celda/celda.component';
 
@@ -17,6 +17,6 @@ import { CeldaComponent } from 'src/app/components/celda/celda.component';
     IonicModule,
     JugarPageRoutingModule
   ],
-  declarations: [Jugarpage, FilaComponent, CeldaComponent]
+  declarations: [jugarpage, FilaComponent, CeldaComponent]
 })
 export class JugarPageModule {}

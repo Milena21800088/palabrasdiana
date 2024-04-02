@@ -12,10 +12,10 @@
   </ion-header
   >
   <ion-content class="ion-padding">
-    <ion-input label="jugador" labelPlacement="stacked"[(ngModel)]="jugador"placeholder="Escriba el nombre del Jugador"></ion-input>
+    <ion-input label="jugador" labelPlacement="stacked"[(ngModel)]="jugador" placeholder=   "Escriba el nombre del Jugador" ></ion-input>
     
     <ion-button *ngFor="let item of opciones" expand="full"  [color]="item.color" [disabled]="jugador.length<3"
-    (click)= "onSelectNivel(item.id)"
+    (click)= "onSelectNivel( item.id)"
     >{{item.name}}</ion-button>
     
    
