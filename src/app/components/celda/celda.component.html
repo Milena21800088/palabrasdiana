@@ -1,0 +1,8 @@
+<ion-input
+   class="custom"
+   [ngClass]= "{'verde': clase === 'acierto', 'naranja': clase === 'casi', 'gris': clase === 'fallo' }"
+   [maxlength]="1"
+   (keyup)="onComprobar()"
+   [(ngModel)]="opcion"
+   
+></ion-input>
