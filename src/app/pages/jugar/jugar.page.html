@@ -1,36 +1,27 @@
-</ion-header [translucent]="true">
+<ion-header [translucent]="true">
+   <ion-toolbar>
+      <ion-title> Nivel: {{nivel.name}} </ion-title>
+    </ion-toolbar>
+</ion-header>
 
-<ion-toolbar>
+<ion-toolbar> [fullscreen]="true">
+  <ion-header> collapse="condense">
+    <ion-toolbar>
+      <ion-title size ="small">Nivel: {{nivel.name}} </ion-title> 
+    </ion-toolbar>
+  </ion-header>
 
-</ion-toolbar>
-
-<ion-title> Nivel: {{nivel.name}} </ion-title>
-
-
-
-
-
-</ion-toolbar> [fullscreen]="true">
-ion-header collapse="condense">
-
-
-</ion-title size ="small">Nivel: {{nivel.name}} </ion-title 
-
-
-
-
-
-ion-content class="ion-padding">ion-content
-
-    <p>{{jugador}} </p> 
+  <ion-content class="ion-padding"></ion-content>
+  <app-fila> *ngFor= "let item of iteraciones" [letras]= "letras" [enviado]= "enviado"></app-fila>
+<p>{{jugador}} </p> 
   
-  
-  
-<app-fila> *ngFor= "let item of iteraciones" [letras]= "letras" [enviado]= "enviado"></app-fila>
+   
 
 
-</ion-button expand = "block" (click)= "enviar"()> enviar</ion-button
-  
+
+
+
+
 
 
 
